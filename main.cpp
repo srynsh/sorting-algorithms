@@ -5,6 +5,7 @@
 #include "swap_sort.h"
 #include "heap_sort.h"
 #include "quick_sort.h"
+#include "radix_sort.h"
 
 using namespace std;
 
@@ -14,14 +15,5 @@ void print(int arr[], int len) {
 }
 
 int main() {
-//    int arr[] = {6,4,7,9,8,3,2,1};
-//    int len = sizeof(arr)/sizeof(arr[0]);
-//
-//    heap_sort(arr, len);
-//
-//    print(arr, len);
-    
-    kthMin();
-    
     return 0;
 }
