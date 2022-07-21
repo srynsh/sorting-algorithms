@@ -10,7 +10,7 @@
 
 using namespace std;
 
-void countSort(int arr[], int n, int exp) {
+void count_sort(int arr[], int n, int exp) {
     int output[n];
     int i;
     int count[10] = { 0 };
@@ -30,11 +30,11 @@ void countSort(int arr[], int n, int exp) {
         arr[i] = output[i];
 }
 
-void radixsort(int arr[], int n) {
+void radix_sort(int arr[], int n) {
     int m = max(arr, n);
     
     for (int exp = 1; m / exp > 0; exp *= 10)
-        countSort(arr, n, exp);
+        count_sort(arr, n, exp);
 }
 
 #endif /* radix_sort_h */
