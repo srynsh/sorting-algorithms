@@ -2,7 +2,7 @@
 //  merge_sort.h
 //  sorting
 //
-//  Created by suryansh jain on 21/07/22.
+//  Created by suryansh jain on 21/07/20.
 //
 
 #ifndef merge_sort_h
@@ -16,10 +16,12 @@ void merge_array(int arr1[], int len1, int arr2[], int len2, int arr3[]) {
     int index = 0;
     
     while (i1<len1 && i2<len2) {
-        if (arr1[i1] < arr2[i2])
+        if (arr1[i1] < arr2[i2]) {
             arr3[index++] = arr1[i1++];
-        else if (arr1[i1] > arr2[i2])
+        }
+        else if (arr1[i1] > arr2[i2]) {
             arr3[index++] = arr2[i2++];
+        }
         else {
             arr3[index++] = arr1[i1++];
             arr3[index++] = arr2[i2++];
