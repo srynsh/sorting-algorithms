@@ -2,7 +2,7 @@
 //  bubble_sort.h
 //  sorting
 //
-//  Created by suryansh jain on 21/07/22.
+//  Created by suryansh jain on 21/07/20.
 //
 
 #ifndef bubble_sort_h
